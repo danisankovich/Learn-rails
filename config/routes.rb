@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  devise_for :users
+  get 'codinghouse'=>'home#index'  #if you go to /codinghouse, it takes you to home/index
+  root 'home#index' #if you just go to local host, it takes you to home/index
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
